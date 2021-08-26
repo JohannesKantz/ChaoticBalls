@@ -17,6 +17,6 @@ const globals: Iglobals = {
     FPS: 60,
     soundEnabled: false,
     gravity: 0.4,
-    damping: 0.99, //0.98,
+    damping: 0.99,
 };
 export default globals;

@@ -2,6 +2,8 @@ import "./styles/style.scss";
 import globals from "./globals";
 import p5 from "p5";
 
+import Color from "color";
+
 import Map, { Circle } from "./components/Map";
 
 import bounceSound from "./sounds/hit2.mp3";
@@ -48,10 +50,11 @@ function initBoucingBalls(p5: p5) {
         )
     );
 
-    // red
-    map.addBall(new Ball(p5, w + 0.1, h, w + 0.1, h, 20, "#ff0000"));
-    // map.addBall(new Ball(p5, w + 0.001, h, w + 0.001, h, 20, "#ff0000"));
-    // blue
-    map.addBall(new Ball(p5, w + 0.15, h, w + 0.15, h, 20, "#00ffff"));
-    // map.addBall(new Ball(p5, w + 0.0015, h, w + 0.0015, h, 20, "#00ffff"));
+    // 0.0005 difference
+    map.addBall(
+        new Ball(p5, w + 0.001, h, w + 0.001, h, 20, new Color("#ff0000"))
+    );
+    map.addBall(
+        new Ball(p5, w + 0.0015, h, w + 0.0015, h, 20, new Color("#00ffff"))
+    );
 }
