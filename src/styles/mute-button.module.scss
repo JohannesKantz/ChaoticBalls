@@ -1,0 +1,29 @@
+@import "variables";
+
+.sound-options {
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+
+    background: $main-bg;
+}
+.mute-button {
+    width: max(4vw, 60px);
+    height: max(4vw, 60px);
+
+    padding: 10px;
+    background: $main-bg;
+
+    border: 0;
+    border-radius: 50%;
+
+    &:hover {
+        cursor: pointer;
+        background: #fff1;
+        box-shadow: 0 0 4px #1111;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
