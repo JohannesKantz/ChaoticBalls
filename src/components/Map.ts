@@ -3,6 +3,7 @@ import Vec2 from "./Vec2";
 import Ball from "./Ball";
 import Point from "./Point";
 import globals from "../globals";
+import { Howl } from "howler";
 
 class Map {
     p5: p5;
@@ -206,12 +207,14 @@ class Circle implements MapElement {
 
                 const speed: number = d.mag();
                 if (globals.soundEnabled && speed > 1) {
-                    const vol: number = this.p5.map(speed, 0, 25, 0.0005, 0.1);
-                    const sound: HTMLAudioElement = new Audio(
-                        globals.bounceSound
-                    );
-                    sound.volume = vol;
-                    sound.play();
+                    const vol: number = this.p5.map(speed, 0, 20, 0.0001, 0.5);
+                    console.log(vol);
+
+                    new Howl({
+                        src: globals.bounceSound!,
+                        autoplay: true,
+                        volume: vol,
+                    });
                 }
             }
         }
