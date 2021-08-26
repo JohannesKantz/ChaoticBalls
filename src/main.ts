@@ -52,9 +52,9 @@ function initBoucingBalls(p5: p5) {
 
     // 0.0005 difference
     map.addBall(
-        new Ball(p5, w + 0.001, h, w + 0.001, h, 20, new Color("#ff0000"))
+        new Ball(p5, w + 0.001, h, w + 0.001, h, 20, new Color("#6ca0fc"))
     );
     map.addBall(
-        new Ball(p5, w + 0.0015, h, w + 0.0015, h, 20, new Color("#00ffff"))
+        new Ball(p5, w + 0.0015, h, w + 0.0015, h, 20, new Color("#fa8142"))
     );
 }

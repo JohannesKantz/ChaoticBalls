@@ -17,7 +17,7 @@ class Map {
     }
 
     draw(): void {
-        this.p5.background(28);
+        this.p5.background("#12181b");
 
         this.drawMapElements();
         this.drawBalls();
