@@ -1,6 +1,7 @@
 {
     "name": "bouncing-balls",
-    "version": "0.0.0",
+    "description": "",
+    "version": "0.0.1",
     "scripts": {
         "dev": "vite",
         "build": "tsc && vite build",
@@ -18,5 +19,6 @@
         "color": "^4.0.1",
         "howler": "^2.2.3",
         "p5": "^1.4.0"
-    }
+    },
+    "license": "MIT"
 }
