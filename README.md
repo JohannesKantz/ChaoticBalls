@@ -1,5 +1,4 @@
-
-<h1 align="center">Bouncing Balls</h1>
+<h1 align="center">Chaotic Balls</h1>
 
 Inspired by <a href="https://www.youtube.com/watch?v=6z4qRhpBIyA">this Numberphile video</a>, this is a simple system that demonstrates chaos theory.
 
@@ -7,7 +6,7 @@ Two balls start at almost exactly the same point, but their trajectories rapidly
 
 
 ## Live Preview
-<a href="" target="_blank">click here for live preview</a>
+<a href="https://johanneskantz.github.io/ChaoticBalls" target="_blank">click here for live preview</a>
 
 ## Screenshots
 
